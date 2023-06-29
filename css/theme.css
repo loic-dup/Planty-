@@ -62,11 +62,6 @@ color: black;
    height: 22.48px;
    width: 238px;
 }
-#site-header
-{
-   height: 130px;
-   margin-top: -30px;
-}
 .bouton-commander, a[href="http://localhost/Planty/commander/"]
 {
    color:white !important;
@@ -236,4 +231,8 @@ color: black;
 .entry-header
 {
    display: none;
+}
+.header-inner
+{
+   padding: 0px !important;
 }
