@@ -1,0 +1,240 @@
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@400;700&display=swap');
+/* Import de la font Syne depuis Google Fonts et on l'applique sur tous les éléments de la page */
+body * {
+   font-family: 'Syne';
+   letter-spacing: 0px;
+}
+label
+{
+color: white;
+}
+main 
+{
+   margin-left: 12%;
+   margin-right: 12%;
+}
+p{
+   font-size: 16px;
+}
+/*HEADER*/
+#site-header.sticky-top{
+   position: sticky;
+   top: 0px ;
+    z-index: 10;
+   background-color: white ;
+   box-shadow:2px 2px 10px;
+}
+h1{
+   color: #3B8E46;
+   font-size: 46px;
+}
+h2
+{
+font-size: 30px;
+color: #3B8E46;
+}
+h3
+{
+font-size: 30px;
+color :#D2776A;
+}
+h4
+{
+
+   font-weight: bolder;
+}
+a
+{
+text-decoration: none !important;
+}
+
+ .noborder-color
+ {
+color: black;
+ }
+ li.menu-item a{
+   position: relative;
+   color: black !important;
+   background-color:white ;
+   padding: 40px 118px;
+ }
+.taille-logo{
+   height: 22.48px;
+   width: 238px;
+}
+#site-header
+{
+   height: 130px;
+   margin-top: -30px;
+}
+.bouton-commander, a[href="http://localhost/Planty/commander/"]
+{
+   color:white !important;
+   background-color:#DC9F96 !important ;
+   width: 364px;
+   left: 135px;
+}
+.admin-position
+{
+   position: absolute;
+   right: 350px;
+   top: 40px;
+   color: black !important;
+   background-color:white ;
+}
+/*FOOTER*/
+#site-footer {
+    padding: 20px;
+    text-align: center;
+    color: black;
+    background-color: white !important;
+ }
+ .footer-position
+ {
+   margin: auto;
+   margin-bottom: 20px;
+ }
+ .footer-nav-widgets-wrapper,
+#site-footer {
+	background-color: #fff;
+	border-color: #dedfdf;
+   border: none;
+}
+
+.section-titre
+{
+   background-color: #ECE2DA;
+}
+/*AVIS*/
+.background-image
+{
+   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/vinicius-wiesehofer-UOavP_Z38lE-unsplash-1-1.png") ;
+   background-size: cover;
+   object-fit: cover;
+   background-position: center;
+   background-clip:border-box;
+   -webkit-background-clip: text;
+   font-size: 200px !important;
+   color: transparent;
+   position: relative;
+}
+.background-image2
+{
+   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/sai-de-silva-4-gFGb12hFA-unsplash-1.png") ;
+   background-size: cover;
+   object-fit: cover;
+   background-position: center;
+   background-clip: text;
+   -webkit-background-clip: text;
+   font-size: 200px !important;
+   color: transparent;
+}
+.background-image3
+{
+   
+   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/bruce-mars-AndE50aaHn4-unsplash-1-1.png");
+   background-size: 175px 250px;
+   background-clip: text;
+   -webkit-background-clip: text;
+   font-size:  200px !important;
+   color: transparent;
+   font-weight: 900!important;
+}
+
+/*DIAPORAMA*/
+.background-image-diapo, #fraise
+{
+   width: 392px;
+   height: 262px;
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-1.png");
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   padding-top: 3.5em;
+   text-align: center;
+   justify-content: center;
+}
+.background-image-diapo, #pamplemousse
+{
+   width: 392px;
+   height: 262px;
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/estudio-bloom-tOitjphtIXU-unsplash-1.png");
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   padding-top: 3.5em;
+   text-align: center;
+   justify-content: center;
+}
+.background-image-diapo, #framboise
+{
+   width: 392px;
+   height: 262px;
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png");
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   padding-top: 3.5em;
+   text-align: center;
+   justify-content: center;
+}.background-image-diapo, #citron
+{
+   width: 392px;
+   height: 262px;
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/estudio-bloom-ezqnxsqUZ80-unsplash-1.png");
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   padding-top: 3.5em;
+   text-align: center;
+   justify-content: center;
+}
+.background-image-diapo-miniature, #fraise2
+{
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-1.png");
+   width: 192px;
+   height: 128px;
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   text-align: center;
+   justify-content: center;
+}
+.background-image-diapo-miniature, #citron2
+{
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/estudio-bloom-ezqnxsqUZ80-unsplash-1.png");
+   width: 192px;
+   height: 128px;
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   text-align: center;
+   justify-content: center;
+}
+.background-image-diapo-miniature, #framboise2
+{
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png");
+   width: 192px;
+   height: 128px;
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   text-align: center;
+   justify-content: center;
+}
+.background-image-diapo-miniature, #pamplemousse2
+{
+   background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/estudio-bloom-tOitjphtIXU-unsplash-1.png");
+   width: 192px;
+   height: 128px;
+   background-position: center;
+   background-size: cover;
+   color: #ffffff;
+   text-align: center;
+   justify-content: center;
+}
+.plus
+{
+   width: 30px;
+   height: 30px;
+}
