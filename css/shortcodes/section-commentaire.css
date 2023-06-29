@@ -1,0 +1,29 @@
+.section-commentaire
+{
+   background-size :125px;
+   background-repeat: no-repeat;
+   object-fit:cover;
+   background-position:left;
+   background-clip:border-box;
+   -webkit-background-clip: text;
+   font-size: 200px;
+   color: transparent;
+   position: relative;
+}
+.section-commentaire-flex
+{
+    display: flex;
+    flex-direction: row;
+}
+.section-commentaire-margin
+{
+    margin-top: 45px;
+    width: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.section-commentaire-color
+{
+    color: green;
+    font-weight: 500;
+}

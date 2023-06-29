@@ -108,13 +108,13 @@ color: black;
 /*AVIS*/
 .background-image
 {
-   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/vinicius-wiesehofer-UOavP_Z38lE-unsplash-1-1.png") ;
+   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/vinicius-wiesehofer-UOavP_Z38lE-unsplash-1-1.png");
    background-size: cover;
    object-fit: cover;
    background-position: center;
    background-clip:border-box;
    -webkit-background-clip: text;
-   font-size: 200px !important;
+   font-size: 200px;
    color: transparent;
    position: relative;
 }
@@ -240,4 +240,17 @@ color: black;
 .header-inner
 {
    padding: 0px !important;
+}
+.wpcf7-form-control
+{
+   border-radius: 10px !important;
+   width: 383px !important;
+}
+.label-color
+{
+   color: black;
+}
+input[type="submit"]
+{
+   background-color: #E0B9B4!important;
 }
