@@ -78,6 +78,11 @@ color: black;
    background-color:white ;
 }
 /*FOOTER*/
+.footer-nav-widgets-wrapper
+{
+   display: none;
+
+}
 #site-footer {
     padding: 20px;
     text-align: center;
