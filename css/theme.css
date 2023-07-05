@@ -106,6 +106,7 @@ color: black;
    background-color: #ECE2DA;
 }
 /*AVIS*/
+/*
 .background-image
 {
    background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/vinicius-wiesehofer-UOavP_Z38lE-unsplash-1-1.png");
@@ -139,7 +140,7 @@ color: black;
    font-size:  200px !important;
    color: transparent;
    font-weight: 900!important;
-}
+}*/
 
 /*DIAPORAMA*/
 .background-image-diapo, #fraise
@@ -199,6 +200,7 @@ color: black;
    color: #ffffff;
    text-align: center;
    justify-content: center;
+
 }
 .background-image-diapo-miniature, #citron2
 {
@@ -210,6 +212,7 @@ color: black;
    color: #ffffff;
    text-align: center;
    justify-content: center;
+  
 }
 .background-image-diapo-miniature, #framboise2
 {
@@ -221,6 +224,7 @@ color: black;
    color: #ffffff;
    text-align: center;
    justify-content: center;
+  
 }
 .background-image-diapo-miniature, #pamplemousse2
 {
@@ -232,6 +236,7 @@ color: black;
    color: #ffffff;
    text-align: center;
    justify-content: center;
+  
 }
 .entry-header
 {

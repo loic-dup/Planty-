@@ -8,6 +8,7 @@ function theme_enqueue_styles()
     // Chargement du /css/shortcodes/banniere-titre.css pour notre shortcode banniere titre
     wp_enqueue_style('section-commentaire-shortcode', get_stylesheet_directory_uri() . '/css/shortcodes/section-commentaire.css', array(), filemtime(get_stylesheet_directory() . '/css/shortcodes/section-commentaire.css'));
     wp_enqueue_style('formulaire-contact-shortcode', get_stylesheet_directory_uri() . '/css/shortcodes/formulaire-contact.css', array(), filemtime(get_stylesheet_directory() . '/css/shortcodes/formulaire-contact.css'));
+    wp_enqueue_style('selecteur-fruit-shortcode', get_stylesheet_directory_uri() . '/css/shortcodes/selecteur-fruit.css', array(), filemtime(get_stylesheet_directory() . '/css/shortcodes/selecteur-fruit.css'));
 }
 
 /*HOOKS*/
@@ -94,6 +95,38 @@ function formulaire_contact_func($atts)
                 <input class="wpcf7-form-control has-spinner wpcf7-submit bouton-color" type="submit" value="<?= $atts['bouton'] ?>">
                 <span class="wpcf7-spinner"></span>
             </p>
+        </div>
+    <?php
+    }
+
+    //J'arrête de récupérer le flux d'information et le stock dans la fonction $output
+    $output = ob_get_contents();
+    ob_end_clean();
+
+    return $output;
+}
+// Je dis à wordpress que j'ajoute un shortcode 'section-commentaire'
+add_shortcode('selecteur-fruit', 'selecteur_fruit_func');
+function selecteur_fruit_func($atts)
+{
+    //Je récupère les attributs mis sur le shortcode
+    $atts = shortcode_atts(array(
+        'min' => '',
+        'max' => '',
+    ), $atts, 'selecteur-fruit');
+
+    //Je commence à récupéré le flux d'information
+    ob_start();
+
+    if ($atts['min'] != "") {
+    ?>
+
+        <div class="number-input">
+            <input class="quantity" min="<?= $atts['min'] ?>" max="<?= $atts['max'] ?>" name="quantity" value="0" type="number">
+            <div class="ordre-boite">
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepUp()" class="plus"></button>
+                <button onclick="this.parentNode.querySelector('input[type=number]').stepDown()" class="moins"></button>
+            </div>
         </div>
 <?php
     }
