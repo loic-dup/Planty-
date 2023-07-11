@@ -13,14 +13,14 @@ input[type="number"] {
     display: inline-flex;
     flex-direction: row;
   }
-  .number-input button {
+.number-input button {
     align-items: center;
     justify-content: center;
     position: relative;
-  }
+}
   
-  .number-input button:before,
-  .number-input button:after {
+.number-input button:before,
+.number-input button:after {
     display: inline-block;
     position: absolute;
     content: '';
@@ -29,11 +29,11 @@ input[type="number"] {
     background-color: #FFFFFF;
     transform: translate(-50%, -50%);
   }
-  .number-input button.plus:after {
+.number-input button.plus:after {
     transform: translate(-50%, -50%) rotate(90deg);
   }
   
-  .number-input input[type=number] {
+.number-input input[type=number] {
     font-family: sans-serif;
     max-width: 5rem;
     padding-left: 5px;
@@ -44,20 +44,22 @@ input[type="number"] {
     font-size: 24px;
     border-top-left-radius: 10px;
     border-bottom-left-radius: 10px;
+    font-weight: 400;
   }
-  .ordre-boite
+.ordre-boite
   {
-      display: inline-flex;
+    display: inline-flex;
     flex-direction: column;
   }
-  .plus
+.plus
   {
-  border-top-right-radius: 10px;
-  background-color: #DC9F96;
-  border-bottom: 1px solid;
+    border-top-right-radius: 10px;
+    background-color: #DC9F96;
+    border-bottom: 1px solid;
       
   }
-  .moins
-  {                           border-bottom-right-radius: 10px;
-  background-color: #DC9F96; 
+.moins
+  {                         
+    border-bottom-right-radius: 10px;
+    background-color: #DC9F96; 
   }
