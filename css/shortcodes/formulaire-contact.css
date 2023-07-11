@@ -5,6 +5,9 @@
 
 }
 .bouton-color{
+    display: flex !important;
 width: 198px !important;
 height: 55px !important;
+justify-content: center !important;
+align-items: center !important;
 }
