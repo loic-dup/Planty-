@@ -8,11 +8,6 @@ label
 {
 color: white;
 }
-main 
-{
-   margin-left: 12%;
-   margin-right: 12%;
-}
 p{
    font-size: 16px;
 }
@@ -23,6 +18,7 @@ p{
     z-index: 10;
    background-color: white ;
    box-shadow:2px 2px 10px;
+   height: auto;
 }
 h1{
    color: #3B8E46;
@@ -40,8 +36,7 @@ color :#D2776A;
 }
 h4
 {
-
-   font-weight: bolder;
+font-weight: bolder;
 }
 a
 {
@@ -52,30 +47,38 @@ text-decoration: none !important;
  {
 color: black;
  }
+ @media all and (min-width: 1024px) and (max-width: 2000px){
  li.menu-item a{
-   position: relative;
+   display: flex;
    color: black !important;
    background-color:white ;
    padding: 40px 118px;
  }
+
+ li.menu-item
+ {
+   position: relative;
+   right: 0px;
+ }
+a[href="http://localhost/Planty/commander/"] 
+{
+   background-color: #DC9F96 !important;
+}
+.admin-position
+{
+   position: relative;
+   right: 18em;
+   top: 40px;
+   color: black !important;
+   background-color:white ;
+}}
 .taille-logo{
    height: 22.48px;
    width: 238px;
 }
-.bouton-commander, a[href="http://localhost/Planty/commander/"]
+.mobile-nav-toggle
 {
-   color:white !important;
-   background-color:#DC9F96 !important ;
-   width: 364px;
-   left: 135px;
-}
-.admin-position
-{
-   position: absolute;
-   right: 350px;
-   top: 40px;
-   color: black !important;
-   background-color:white ;
+
 }
 /*FOOTER*/
 .footer-nav-widgets-wrapper
@@ -91,7 +94,8 @@ color: black;
  }
  .footer-position
  {
-   margin: auto;
+width: 100%;
+height: 100%;
    margin-bottom: 20px;
  }
  .footer-nav-widgets-wrapper,
@@ -175,7 +179,7 @@ color: black;
    background-position: center;
    background-size: cover;
    color: #ffffff;
-   padding-top: 3.5em;
+   padding-top: 2em;
    text-align: center;
    justify-content: center;
 }.background-image-diapo, #citron
@@ -193,8 +197,8 @@ color: black;
 .background-image-diapo-miniature, #fraise2
 {
    background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/jeremy-bezanger-0QgbyZdhX7k-unsplash-1-1.png");
-   width: 192px;
-   height: 128px;
+   width: 242px;
+   height: 168px;
    background-position: center;
    background-size: cover;
    color: #ffffff;
@@ -205,8 +209,8 @@ color: black;
 .background-image-diapo-miniature, #citron2
 {
    background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/estudio-bloom-ezqnxsqUZ80-unsplash-1.png");
-   width: 192px;
-   height: 128px;
+   width: 242px;
+   height: 168px;
    background-position: center;
    background-size: cover;
    color: #ffffff;
@@ -217,8 +221,8 @@ color: black;
 .background-image-diapo-miniature, #framboise2
 {
    background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/rodion-kutsaev-4k8xEFW4_3Q-unsplash-1.png");
-   width: 192px;
-   height: 128px;
+   width: 242px;
+   height: 168px;
    background-position: center;
    background-size: cover;
    color: #ffffff;
@@ -229,8 +233,8 @@ color: black;
 .background-image-diapo-miniature, #pamplemousse2
 {
    background-image:url("http://localhost/Planty/wp-content/uploads/2023/06/estudio-bloom-tOitjphtIXU-unsplash-1.png");
-   width: 192px;
-   height: 128px;
+   width: 242px;
+   height: 168px;
    background-position: center;
    background-size: cover;
    color: #ffffff;
@@ -258,4 +262,62 @@ color: black;
 input[type="submit"]
 {
    background-color: #E0B9B4!important;
+}
+.wpforms-submit
+{
+   display: flex;
+   position: relative;
+background-color:#E0B9B4 !important;
+justify-content: center;
+align-items: center;
+left: 20%;
+width: 200px !important;
+}
+.ligne-blanche
+{
+
+   transform: translate(-50%, -50%) rotate(90deg);
+}
+#wpforms-submit-595
+{
+   display: none;
+}
+#wpforms-submit-608
+{
+   display: none ;
+}
+div.wpforms-container-full input[type=email] 
+{
+   border: none;
+   width: 383px !important;
+   height: 71px !important;
+   margin: 0px;
+   padding: 0px;
+   max-width: 100%;
+}
+div.wpforms-container-full .wpforms-field-label
+{
+   color: white;  
+}
+div.wpforms-container-full input[type=text] 
+{
+   border: none;
+   width: 383px !important;
+   height: 71px !important;
+   margin: 0px;
+   padding: 0px;
+   max-width: 100%;
+}
+div.wpforms-container-full .wpforms-form textarea
+{
+   border: none;
+   width: 383px !important;
+   height: 237px !important;
+   margin: 0px;
+   padding: 0px;
+   max-width: 100%;
+} 
+.wpforms-field-label
+{
+   
 }
