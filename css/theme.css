@@ -14,12 +14,18 @@ p{
 /*HEADER*/
 #site-header.sticky-top{
    position: sticky;
-   top: 0px ;
+top: 0px;
     z-index: 10;
    background-color: white ;
    box-shadow:2px 2px 10px;
-   height: auto;
 }
+@media all and (min-width: 0px) and (max-width: 600px){
+   h1{
+      color: #3B8E46;
+      font-size: 22px !important;
+   }
+}
+
 h1{
    color: #3B8E46;
    font-size: 46px;
@@ -47,6 +53,22 @@ text-decoration: none !important;
  {
 color: black;
  }
+@media all and (min-width: 1024px) and (max-width: 1400px){
+ li.menu-item a {
+   display: flex;
+   color: black !important;
+   background-color:white ;
+   padding: 40px 40px !important;
+ }
+ .admin-position
+ {
+    position: relative;
+    color: black !important;
+    background-color:white ;
+    padding: 40px 56px !important;
+    order: 1 !important;
+ 
+ }}
  @media all and (min-width: 1024px) and (max-width: 2000px){
  li.menu-item a{
    display: flex;
@@ -54,11 +76,24 @@ color: black;
    background-color:white ;
    padding: 40px 118px;
  }
+ 
+
 
  li.menu-item
  {
    position: relative;
    right: 0px;
+   margin-right: 0px;
+ }
+ .section-inner
+ {
+   width:calc(100%) !important;
+   max-width: 100% !important;
+ }
+ .header-inner 
+ {
+   width: calc(100%) !important;
+   max-width: 100% !important;
  }
 a[href="http://localhost/Planty/commander/"] 
 {
@@ -67,19 +102,30 @@ a[href="http://localhost/Planty/commander/"]
 .admin-position
 {
    position: relative;
-   right: 18em;
-   top: 40px;
    color: black !important;
    background-color:white ;
+   padding: 40px 118px;
+   order: 1 !important;
+
 }}
 .taille-logo{
    height: 22.48px;
    width: 238px;
+   margin-left: 50px;
 }
-.mobile-nav-toggle
+#menu-item-191
 {
-
+   order: 2 !important;
 }
+#menu-item-58
+{
+   order: 0 !important;
+}
+@media all and (min-width: 0px) and (max-width: 1024px){
+#wp-admin-bar-my-account
+{
+display: none !important;
+}}
 /*FOOTER*/
 .footer-nav-widgets-wrapper
 {
@@ -87,10 +133,10 @@ a[href="http://localhost/Planty/commander/"]
 
 }
 #site-footer {
-    padding: 20px;
     text-align: center;
     color: black;
     background-color: white !important;
+    padding: 0px !important;
  }
  .footer-position
  {
