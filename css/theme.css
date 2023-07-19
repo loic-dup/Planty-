@@ -48,7 +48,7 @@ a
 {
 text-decoration: none !important;
 }
-
+/*HEADER*/
  .noborder-color
  {
 color: black;
@@ -67,7 +67,6 @@ color: black;
     background-color:white ;
     padding: 40px 56px !important;
     order: 1 !important;
- 
  }}
  @media all and (min-width: 1024px) and (max-width: 2000px){
  li.menu-item a{
@@ -76,25 +75,23 @@ color: black;
    background-color:white ;
    padding: 40px 118px;
  }
- 
-
-
  li.menu-item
  {
    position: relative;
    right: 0px;
    margin-right: 0px;
  }
- .section-inner
- {
-   width:calc(100%) !important;
-   max-width: 100% !important;
- }
  .header-inner 
  {
    width: calc(100%) !important;
    max-width: 100% !important;
  }
+ .section-inner
+ {
+   width:calc(100%) !important;
+   max-width: 100% !important;
+ }
+
 a[href="http://localhost/Planty/commander/"] 
 {
    background-color: #DC9F96 !important;
@@ -126,6 +123,14 @@ a[href="http://localhost/Planty/commander/"]
 {
 display: none !important;
 }}
+.header-inner
+{
+   padding: 0px !important;
+}
+.entry-header
+{
+   display: none;
+}
 /*FOOTER*/
 .footer-nav-widgets-wrapper
 {
@@ -150,48 +155,11 @@ height: 100%;
 	border-color: #dedfdf;
    border: none;
 }
-
 .section-titre
 {
    background-color: #ECE2DA;
 }
 /*AVIS*/
-/*
-.background-image
-{
-   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/vinicius-wiesehofer-UOavP_Z38lE-unsplash-1-1.png");
-   background-size: cover;
-   object-fit: cover;
-   background-position: center;
-   background-clip:border-box;
-   -webkit-background-clip: text;
-   font-size: 200px;
-   color: transparent;
-   position: relative;
-}
-.background-image2
-{
-   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/sai-de-silva-4-gFGb12hFA-unsplash-1.png") ;
-   background-size: cover;
-   object-fit: cover;
-   background-position: center;
-   background-clip: text;
-   -webkit-background-clip: text;
-   font-size: 200px !important;
-   color: transparent;
-}
-.background-image3
-{
-   
-   background-image: url("http://localhost/Planty/wp-content/uploads/2023/06/bruce-mars-AndE50aaHn4-unsplash-1-1.png");
-   background-size: 175px 250px;
-   background-clip: text;
-   -webkit-background-clip: text;
-   font-size:  200px !important;
-   color: transparent;
-   font-weight: 900!important;
-}*/
-
 /*DIAPORAMA*/
 .background-image-diapo, #fraise
 {
@@ -288,14 +256,8 @@ height: 100%;
    justify-content: center;
   
 }
-.entry-header
-{
-   display: none;
-}
-.header-inner
-{
-   padding: 0px !important;
-}
+
+/*FORMULAIRE*/
 .wpcf7-form-control
 {
    border-radius: 10px !important;
@@ -363,7 +325,3 @@ div.wpforms-container-full .wpforms-form textarea
    padding: 0px;
    max-width: 100%;
 } 
-.wpforms-field-label
-{
-   
-}

@@ -57,7 +57,7 @@ function section_commentaire_func($atts)
 
     return $output;
 }
-// Je dis à wordpress que j'ajoute un shortcode 'section-commentaire'
+// Je dis à wordpress que j'ajoute un shortcode 'formulaire-contact'
 add_shortcode('formulaire-contact', 'formulaire_contact_func');
 function formulaire_contact_func($atts)
 {
@@ -105,7 +105,7 @@ function formulaire_contact_func($atts)
 
     return $output;
 }
-// Je dis à wordpress que j'ajoute un shortcode 'section-commentaire'
+// Je dis à wordpress que j'ajoute un shortcode 'selecteur-fruit'
 add_shortcode('selecteur-fruit', 'selecteur_fruit_func');
 function selecteur_fruit_func($atts)
 {

@@ -1,4 +1,5 @@
 <?php
+
 /**
  * The template for displaying the footer
  *
@@ -12,12 +13,11 @@
  */
 
 ?>
-        <footer id="site-footer" class="header-footer-group">
-            <img src="http://localhost/Planty/wp-content/uploads/2023/06/Canette.png" alt=" Images représentant une ligne de canettes Planty" class="footer-position">
-            <a href="#" class="noborder-color">Mentions légales</a>
-        </footer><!-- #site-footer -->
+<footer id="site-footer" class="header-footer-group">
+  <img src="http://localhost/Planty/wp-content/uploads/2023/06/Canette.png" alt=" Images représentant une ligne de canettes Planty" class="footer-position">
+  <a href="#" class="noborder-color">Mentions légales</a>
+</footer><!-- #site-footer -->
+<?php wp_footer(); ?>
+</body>
 
-      <?php wp_footer(); ?>
-
-   </body>
 </html>
